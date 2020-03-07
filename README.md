@@ -31,3 +31,11 @@
 #### we can use countRef.current to compare new values and old values.
 
 #### useReducer Handles more complex state
+
+#### Reducer is a function That takes 2 things, The State and an Action, The Actions Trigger State Changes.
+
+#### useMemo will call the function, if the depencies havent changed it will not call the function again..
+
+#### useCallback will give you a new function you can call, gives u the function rather than the result..
+
+#### use React.memo() sparingly unless u can save alot of Rerenders.
