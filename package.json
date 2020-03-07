@@ -34,9 +34,11 @@
   },
   "dependencies": {
     "@reach/router": "^1.3.3",
+    "random-name": "^0.1.2",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
-    "react-router-dom": "^5.1.2"
+    "react-router-dom": "^5.1.2",
+    "uuid": "^7.0.2"
   },
   "browserslist": [
     "last 2 Chrome versions",
