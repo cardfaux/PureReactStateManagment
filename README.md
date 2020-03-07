@@ -5,3 +5,5 @@
 ## Many Kinds Of State; Model Data, View/UI State, Session State, Communication, Location
 
 ## Counter.js is a simple example of state in a class based component
+
+## Turns out SCSS files is Auto Compiled With Parcel just write The File and import it

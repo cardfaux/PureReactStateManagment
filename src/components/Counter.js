@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
 // This.setState() is Asynchrous
 // When a function is Passed to this.setState it plays through each of them
@@ -20,12 +20,12 @@ class Counter extends Component {
 
   increment() {
     this.setState(
-      state => {
+      (state) => {
         if (state.count >= 5) return;
         return { count: state.count + 1 };
       },
       () => {
-        console.log("After State Change", this.state);
+        console.log('After State Change', this.state);
       }
     );
   }
@@ -42,9 +42,9 @@ class Counter extends Component {
     const { count } = this.state;
 
     return (
-      <div className="Counter">
-        <p className="count">{count}</p>
-        <section className="controls">
+      <div className='Counter'>
+        <p className='count'>{count}</p>
+        <section className='controls'>
           <button onClick={this.increment}>Increment</button>
           <button onClick={this.decrement}>Decrement</button>
           <button onClick={this.reset}>reset</button>

@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 
-import Counter from "./components/Counter";
+import Counter from './components/Counter';
 
-const App = props => {
+const App = (props) => {
   return <Counter />;
 };
 
