@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 
 // This.setState() is Asynchrous
+// When a function is Passed to this.setState it plays through each of them
+// Increment Shows Logic with setState()
+// This.state() takes 2 arguments one being the object or the function, the other is a function it will call after it has updated the state
+// This is the callback function in increment
 
 class Counter extends Component {
   constructor(props) {
@@ -15,7 +19,15 @@ class Counter extends Component {
   }
 
   increment() {
-    this.setState({ count: this.state.count + 1 });
+    this.setState(
+      state => {
+        if (state.count >= 5) return;
+        return { count: state.count + 1 };
+      },
+      () => {
+        console.log("After State Change", this.state);
+      }
+    );
   }
 
   decrement() {
