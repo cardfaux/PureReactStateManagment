@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+// This.setState() is Asynchrous
+
 class Counter extends Component {
   constructor(props) {
     super(props);
