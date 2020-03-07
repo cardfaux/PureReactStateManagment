@@ -1,8 +1,8 @@
 {
   "name": "setup",
   "version": "1.0.0",
+  "private": true,
   "description": "React/Parcel",
-  "main": "src/App.js",
   "scripts": {
     "clear-build-cache": "rm -rf .cache/ dist/",
     "dev": "parcel public/index.html",
